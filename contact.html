@@ -124,10 +124,11 @@
             <a class="btn" href="mailto:thethaistandard@gmail.com">Email me</a>
           </div>
           <h3 class="contact-sub">Tell me what you need</h3>
-          <form class="need-form" action="https://formsubmit.co/thethaistandard@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New message from The Thai Standard website">
-            <input type="hidden" name="_captcha" value="true">
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <form class="need-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="5a5c153d-86ea-4fd4-b0b1-55916dea43a4">
+            <input type="hidden" name="subject" value="New message from The Thai Standard website">
+            <input type="hidden" name="from_name" value="The Thai Standard website">
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
             <label for="nf-name">Name</label>
             <input id="nf-name" name="name" type="text" autocomplete="name" required>
             <label for="nf-email">Email</label>
