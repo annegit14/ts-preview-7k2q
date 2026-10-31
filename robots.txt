@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thethaistandard.com/sitemap.xml
