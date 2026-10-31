@@ -683,3 +683,118 @@ footer .wrap{z-index:3}
 .about-text .coord{margin-top:.2rem}
 .about-text .about-lotus{margin-top:.3rem;margin-bottom:.3rem}
 }
+
+/* Common areas we help with */
+.areas{max-width:980px;margin:3rem auto 0;text-align:center}
+.areas-title{font-family:var(--serif);font-style:italic;font-weight:500;font-size:2.2rem;line-height:1.25;margin:0 0 1.4rem;color:#F2C97E}
+.area-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.2rem}
+.area-list li{font-size:24px;line-height:1.3;color:#F2C97E;background:rgba(36,19,58,.78);border:1px solid var(--champ-line);box-shadow:0 8px 22px rgba(10,4,20,.3);border-radius:999px;padding:.75rem 1.7rem}
+@media (max-width:760px){.areas{margin-top:2.2rem}.areas-title{font-size:2rem}.area-list{gap:.8rem}.area-list li{padding:.65rem 1.3rem}}
+
+/* Common areas: one single row (swipeable when the screen is too narrow) */
+.areas{max-width:1240px}
+.area-list{flex-wrap:nowrap;justify-content:center;gap:.7rem;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:.4rem .2rem .9rem}
+.area-list::-webkit-scrollbar{display:none}
+.area-list li{flex:0 0 auto;white-space:nowrap;padding:.6rem 1.2rem}
+@media (max-width:1239px){.area-list{justify-content:flex-start;scroll-snap-type:x proximity}.area-list li{scroll-snap-align:start}}
+@media (max-width:760px){.area-list{gap:.6rem}.area-list li{padding:.55rem 1.1rem}}
+.area-list{gap:.5rem}
+.area-list li{padding:.6rem .95rem}
+@media (max-width:1279px){.area-list{justify-content:flex-start}}
+@media (min-width:1280px){.area-list{justify-content:center}}
+@media (max-width:760px){.area-list li{padding:.55rem 1.1rem}}
+@media (min-width:1280px){.area-list{padding-left:0;padding-right:0}.area-list li{padding:.6rem .8rem}}
+
+/* bigger procedure pills; smaller Message us box with larger twigs */
+.areas{max-width:1260px;margin-left:auto;margin-right:auto}
+.areas-title{font-size:2.4rem}
+.area-list{gap:.45rem}
+.area-list li{font-size:27px;padding:.8rem .75rem}
+@media (min-width:1500px){.area-list{gap:.7rem}.area-list li{font-size:30px;padding:.9rem 1.1rem}}
+@media (max-width:1279px){.area-list li{font-size:28px;padding:.8rem 1.2rem}}
+@media (min-width:761px){
+  .talk{max-width:560px;padding-top:1.1rem;padding-bottom:1.1rem}
+  .talk h2{font-size:2.4rem;margin-bottom:.4rem}
+  .contact{max-width:420px;gap:.4rem}
+  .contact li{padding:.3rem 1rem}
+  .contact a,.contact li > span:not(.lbl){font-size:1.5rem}
+  .talk .calm-leaves.lotus-div.lotus-top{margin:-6px auto .5rem;max-width:170px}
+}
+@media (min-width:1000px){.talk-twig.tw1{width:104px;height:136px;left:6px;top:8px}.talk-twig.tw2{width:76px;height:99px;left:96px;top:34px}}
+@media (max-width:760px){
+  .talk{padding-top:1.1rem;padding-bottom:1rem}
+  .talk h2{font-size:2.4rem;margin-bottom:.3rem}
+  .contact li{padding:.3rem .8rem}
+  .contact a,.contact li > span:not(.lbl){font-size:1.5rem}
+}
+@media (min-width:1100px){.areas{width:min(1380px,calc(100vw - 32px));max-width:none;position:relative;left:50%;transform:translateX(-50%)}}
+@media (min-width:1100px){.area-list li{font-size:26px;padding:.8rem .7rem}}
+@media (min-width:1500px){.area-list{gap:.6rem}.area-list li{font-size:28px;padding:.85rem .95rem}}
+@media (min-width:761px){.talk{max-width:640px}.contact{max-width:350px}}
+@media (max-width:760px){.talk{width:96%;padding-left:.5rem;padding-right:.5rem}.contact li{padding:.3rem .25rem}.contact a{letter-spacing:-.01em}}
+@media (min-width:761px){.talk{max-width:760px}.contact{max-width:430px}.contact a{white-space:nowrap}}
+@media (max-width:760px){.talk{width:98%}.contact li{padding:.3rem 0}.contact a{letter-spacing:-.035em;white-space:nowrap;font-size:24px}}
+
+/* v1392: smaller Message us + Anne Gyorgy cards (desktop and phone), text stays >= 24px */
+@media (min-width:761px){
+  .talk{max-width:600px;padding-top:1.1rem;padding-bottom:1rem}
+  .talk h2{font-size:2rem;margin-bottom:.2rem}
+  .talk .calm-leaves.lotus-div.lotus-top{max-width:130px;margin:-6px auto .4rem}
+  .contact{max-width:380px}
+  .contact li{padding:.15rem 0}
+  .about{max-width:600px;gap:.7rem;padding:.6rem 1.1rem}
+  .about .photo{width:104px;height:128px}
+  .about .photo img{width:154px;height:154px;margin:-26px 0 0 -13px}
+  .about-text h2{font-size:2rem}
+  .about-text .coord,.about-text .about-line{font-size:1.5rem;line-height:1.3}
+}
+@media (max-width:760px){
+  .talk{padding-top:1.5rem;padding-bottom:1.3rem}
+  .talk h2{font-size:2rem}
+  .about{padding:1rem .9rem;gap:.6rem}
+  .about .photo{width:120px;height:148px;margin-inline:auto}
+  .about .photo img{width:178px;height:178px;max-width:none;margin:-30px 0 0 -15px}
+  .about-text h2{font-size:2rem}
+}
+@media (min-width:761px){
+  .talk:not(.contact-card) .talk-twig.tw1,.talk .talk-twig.tw1{width:58px;height:76px;left:14px;top:18px}
+  .talk:not(.contact-card) .talk-twig.tw2,.talk .talk-twig.tw2{width:42px;height:55px;left:62px;top:40px}
+  .about{padding-left:1.8rem;padding-right:1.6rem}
+}
+@media (min-width:761px){
+  .talk .talk-twig.tw1,.talk:not(.contact-card) .talk-twig.tw1{width:68px;height:89px;left:6px;top:78px}
+  .talk .talk-twig.tw2,.talk:not(.contact-card) .talk-twig.tw2{width:46px;height:60px;left:26px;top:24px}
+}
+
+/* v1393: calmer, much smaller bottom (Message us down), tiny footer line */
+.contact-sec{padding:.4rem 0 1.6rem}
+.about-sec{padding:.2rem 0 1.6rem}
+footer,footer p{font-size:18px;line-height:1.4;opacity:.85}
+footer{padding-top:.4rem;padding-bottom:1rem}
+footer p{margin:.1rem 0}
+footer > .seig-corner-br{width:300px;height:184px}
+@media (min-width:761px){
+  .talk{max-width:500px;padding-top:.8rem;padding-bottom:.7rem}
+  .talk h2{font-size:1.7rem}
+  .contact{max-width:330px}
+  .about{max-width:500px;padding:.5rem 1.4rem .5rem 1.6rem}
+  .about .photo{width:86px;height:106px}
+  .about .photo img{width:128px;height:128px;margin:-22px 0 0 -11px}
+  .about-text h2{font-size:1.7rem}
+  .about-text .coord,.about-text .about-line{font-size:1.25rem}
+  .talk .talk-twig.tw1{width:56px;height:73px;top:64px;left:6px}
+  .talk .talk-twig.tw2{width:38px;height:50px;left:22px;top:20px}
+}
+@media (max-width:760px){
+  .talk{padding-top:1.1rem;padding-bottom:1rem;width:90%}
+  .talk h2{font-size:1.7rem}
+  .about{padding:.8rem .8rem;width:90%}
+  .about .photo{width:96px;height:118px}
+  .about .photo img{width:142px;height:142px;margin:-24px 0 0 -12px}
+  .about-text h2{font-size:1.7rem}
+  .about-text .coord,.about-text .about-line{font-size:1.2rem}
+}
+@media (max-width:760px){
+  footer,footer p{font-size:16px !important}
+  .talk,.about{width:94%}
+}
