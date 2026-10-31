@@ -798,3 +798,29 @@ footer > .seig-corner-br{width:300px;height:184px}
   footer,footer p{font-size:16px !important}
   .talk,.about{width:94%}
 }
+
+/* v1395: phone leaves kept fully on screen; procedures slide on their own like a ticker */
+@media (max-width:760px){
+  .hero-right{right:8px;width:72px;height:95px}
+  .hero-left{left:6px;width:110px;height:82px}
+}
+.area-list.ticker{display:block;overflow:hidden;padding-left:0;padding-right:0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 94%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 6%,#000 94%,transparent 100%)}
+.area-list.ticker .track{display:flex;flex-wrap:nowrap;width:max-content;animation:tstTick 34s linear infinite}
+.area-list.ticker .track li{margin-right:.6rem;flex:0 0 auto}
+.area-list.ticker:active .track{animation-play-state:paused}
+@keyframes tstTick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.area-list.ticker .track{animation:none}.area-list.ticker{overflow-x:auto}}
+@media (max-width:760px){
+  .svc-right{right:6px;width:110px;height:82px}
+}
+@media (max-width:760px){.svc-right{right:14px}}
+
+/* v1396: about block without a tile */
+.about{background:none !important;border:0 !important;box-shadow:none !important;border-radius:0 !important;backdrop-filter:none !important}
+.about::before,.about::after{display:none !important}
+@media (min-width:761px){.about{max-width:520px;padding:.2rem 1rem}}
+
+/* v1399: readable but quiet footer line */
+footer p.fine{font-size:15px !important;opacity:1;color:#F2C97E;text-wrap:balance;max-width:34ch;margin-left:auto;margin-right:auto}
+footer p:not(.fine){font-size:14px !important;opacity:.85}
+@media (min-width:761px){footer p.fine{max-width:none}}
