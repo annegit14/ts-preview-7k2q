@@ -299,7 +299,7 @@ body{background-image:none;background-color:var(--ivory)}
    ===================================================================== */
 :root{
   --plum:#3A2152; --plum-2:#2F1A49; --plum-3:#24133A; --plum-lite:#4A2C68;
-  --champ:#EEDCAA; --champ-hi:#F3E3B5; --champ-line:rgba(238,220,170,.55);
+  --champ:#EDC26A; --champ-hi:#F6D68E; --champ-line:rgba(237,194,106,.55);
 }
 body{background:var(--plum) none;color:var(--champ)}
 a{color:var(--champ-hi)}
@@ -317,13 +317,13 @@ h1,h2,h3,h1 em,h2 em,.lead,.calm-text,.calm-text em,.tile h3,.about-text h2{colo
 .leaf{opacity:.9}
 .mark{background:rgba(36,19,58,.75);border-color:var(--champ-line)}
 .topbar nav a{color:var(--champ-hi)}
-.topbar nav a:hover{background:rgba(238,220,170,.12)}
+.topbar nav a:hover{background:rgba(237,194,106,.12)}
 
 /* hero emblem inside a round "moon gate" */
 .e-circle{background:#5E3F84;opacity:.55}
 .e-ring{border-color:var(--champ);opacity:.55}
-.moon-gate{position:absolute;inset:-14px;border-radius:50%;border:1.5px solid rgba(238,220,170,.75);
-  box-shadow:0 0 0 7px rgba(58,33,82,1),0 0 0 8px rgba(238,220,170,.28)}
+.moon-gate{position:absolute;inset:-14px;border-radius:50%;border:1.5px solid rgba(237,194,106,.75);
+  box-shadow:0 0 0 7px rgba(58,33,82,1),0 0 0 8px rgba(237,194,106,.28)}
 .emblem{margin-top:1.2rem;margin-bottom:2rem}
 
 /* individually placed motifs (no tiling) */
@@ -359,10 +359,10 @@ h1,h2,h3,h1 em,h2 em,.lead,.calm-text,.calm-text em,.tile h3,.about-text h2{colo
 .t-circle{background:#5E3F84;opacity:.4}
 .t-ring{border-color:var(--champ);opacity:.45}
 .contact li{background:rgba(58,33,82,.85);border-color:var(--champ-line)}
-.contact a,.contact li > span:not(.lbl){color:var(--champ-hi);text-decoration-color:rgba(238,220,170,.7)}
+.contact a,.contact li > span:not(.lbl){color:var(--champ-hi);text-decoration-color:rgba(237,194,106,.7)}
 
 .about{background:rgba(36,19,58,.8);border:1px solid var(--champ-line)}
-.photo{box-shadow:0 0 0 6px rgba(58,33,82,1),0 0 0 7.5px rgba(238,220,170,.7),0 12px 26px rgba(10,4,20,.4)}
+.photo{box-shadow:0 0 0 6px rgba(58,33,82,1),0 0 0 7.5px rgba(237,194,106,.7),0 12px 26px rgba(10,4,20,.4)}
 
 footer{background:var(--plum-3);color:var(--champ);border-top:1px solid var(--champ-line)}
 
@@ -568,7 +568,7 @@ footer{position:relative}
 @media (max-width:760px){.premier{font-size:1.5rem}.p-twig{width:30px;height:40px}.premier-row{gap:.6rem}}
 
 /* "From your first question..." sentence: bigger and more gold */
-.section-lead{font-size:clamp(1.7rem,3vw,2.15rem);line-height:1.4;max-width:34ch;color:#F2C97E;font-weight:600}
+.section-lead{font-size:clamp(1.7rem,3vw,2.15rem);line-height:1.4;max-width:34ch;color:#EDC26A;font-weight:600}
 
 /* t1288: bigger/more top-left bubbles, bubbles behind the About tile's bottom-right, larger Premier line, slightly smaller About and quote boxes */
 .seig-hero{width:420px;height:245px}
@@ -584,11 +584,11 @@ footer{position:relative}
 
 /* headline split into two lines; Premier line matches its size, weight and color */
 .section-lead{max-width:none}
-.premier{font-size:clamp(1.7rem,3vw,2.15rem);font-weight:600;color:#F2C97E}
+.premier{font-size:clamp(1.7rem,3vw,2.15rem);font-weight:600;color:#EDC26A}
 
 /* one gold for all text (button label stays dark on its gold button) */
-body,a:not(.btn),h1,h1 em,h2,h3,p,em,.lead,.calm-text,.calm-text em,.num,.lbl,.eyebrow,.intro,.coord,.about-line,.about-text p,.tile p,.tile h3,.topbar nav a,.contact a,.contact li > span,footer,footer p{color:#F2C97E}
-.contact .lbl,.contact li > span.lbl,.about-text h2,.about .coord,.about-text .coord,.about-text p.coord{color:#F2C97E !important}
+body,a:not(.btn),h1,h1 em,h2,h3,p,em,.lead,.calm-text,.calm-text em,.num,.lbl,.eyebrow,.intro,.coord,.about-line,.about-text p,.tile p,.tile h3,.topbar nav a,.contact a,.contact li > span,footer,footer p{color:#EDC26A}
+.contact .lbl,.contact li > span.lbl,.about-text h2,.about .coord,.about-text .coord,.about-text p.coord{color:#EDC26A !important}
 
 /* corner bubble sections: triangles of bubbles reaching into the page corners, fading diagonally */
 .seig-hero,.seig-about{display:none}
@@ -646,9 +646,9 @@ footer,footer p{font-size:28px}
 .contact-sub{font-family:var(--serif);font-style:italic;font-weight:500;font-size:2.2rem;margin:.4rem 0 1rem}
 .need-form{display:flex;flex-direction:column;gap:.5rem;text-align:left;max-width:520px;margin:0 auto}
 .need-form label{font-size:24px;letter-spacing:.04em}
-.need-form input[type=text],.need-form input[type=email],.need-form textarea{width:100%;font:inherit;font-size:24px;color:#F2C97E;background:rgba(58,33,82,.85);border:1px solid var(--champ-line);border-radius:18px;padding:.6rem 1rem}
+.need-form input[type=text],.need-form input[type=email],.need-form textarea{width:100%;font:inherit;font-size:24px;color:#EDC26A;background:rgba(58,33,82,.85);border:1px solid var(--champ-line);border-radius:18px;padding:.6rem 1rem}
 .need-form textarea{resize:vertical;min-height:140px}
-.need-form input:focus,.need-form textarea:focus{outline:2px solid #F2C97E;outline-offset:2px}
+.need-form input:focus,.need-form textarea:focus{outline:2px solid #EDC26A;outline-offset:2px}
 .need-form .btn{margin-top:1rem;align-self:center;min-width:200px;cursor:pointer}
 @media (max-width:760px){.contact-card{width:94%;padding:1.6rem 1rem 1.8rem}.contact-actions .btn{min-width:0;flex:1 1 100%}}
 .need-form textarea{min-height:120px}
@@ -686,9 +686,9 @@ footer .wrap{z-index:3}
 
 /* Common areas we help with */
 .areas{max-width:980px;margin:3rem auto 0;text-align:center}
-.areas-title{font-family:var(--serif);font-style:italic;font-weight:500;font-size:2.2rem;line-height:1.25;margin:0 0 1.4rem;color:#F2C97E}
+.areas-title{font-family:var(--serif);font-style:italic;font-weight:500;font-size:2.2rem;line-height:1.25;margin:0 0 1.4rem;color:#EDC26A}
 .area-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.2rem}
-.area-list li{font-size:24px;line-height:1.3;color:#F2C97E;background:rgba(36,19,58,.78);border:1px solid var(--champ-line);box-shadow:0 8px 22px rgba(10,4,20,.3);border-radius:999px;padding:.75rem 1.7rem}
+.area-list li{font-size:24px;line-height:1.3;color:#EDC26A;background:rgba(36,19,58,.78);border:1px solid var(--champ-line);box-shadow:0 8px 22px rgba(10,4,20,.3);border-radius:999px;padding:.75rem 1.7rem}
 @media (max-width:760px){.areas{margin-top:2.2rem}.areas-title{font-size:2rem}.area-list{gap:.8rem}.area-list li{padding:.65rem 1.3rem}}
 
 /* Common areas: one single row (swipeable when the screen is too narrow) */
@@ -821,7 +821,7 @@ footer > .seig-corner-br{width:300px;height:184px}
 @media (min-width:761px){.about{max-width:520px;padding:.2rem 1rem}}
 
 /* v1399: readable but quiet footer line */
-footer p.fine{font-size:15px !important;opacity:1;color:#F2C97E;text-wrap:balance;max-width:34ch;margin-left:auto;margin-right:auto}
+footer p.fine{font-size:15px !important;opacity:1;color:#EDC26A;text-wrap:balance;max-width:34ch;margin-left:auto;margin-right:auto}
 footer p:not(.fine){font-size:14px !important;opacity:.85}
 @media (min-width:761px){footer p.fine{max-width:none}}
 
@@ -888,4 +888,37 @@ footer p:not(.fine){font-size:14px !important;opacity:.85}
 .calm-text em{display:block}
 .calm-text.calm-text-2{margin-top:1.1rem;font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.45}
 @media (max-width:760px){.calm-text.calm-text-2{font-size:1.55rem}}
-.talk:not(.contact-card) .contact a{text-decoration:underline !important;text-decoration-thickness:1px !important;text-underline-offset:6px !important;text-decoration-color:rgba(242,201,126,.75) !important;color:#F8DFA6 !important;border-bottom:0 !important}
+.talk:not(.contact-card) .contact a{text-decoration:underline !important;text-decoration-thickness:1px !important;text-underline-offset:6px !important;text-decoration-color:rgba(237,194,106,.75) !important;color:#F6D68E !important;border-bottom:0 !important}
+
+/* v1423 draft: calmer catchphrase, areas note, centered bottom */
+.calm-text:not(.calm-text-2){font-size:clamp(1.5rem,2.6vw,1.95rem);line-height:1.35}
+.calm-text:not(.calm-text-2) em{margin-top:.15rem}
+.calm-sprig{display:block;width:30px;height:39px;margin:.7rem auto 0;opacity:.9}
+.calm-text.calm-text-2{margin-top:.7rem;font-size:clamp(1.3rem,2.2vw,1.65rem)}
+.calm-leaves.lotus-div{margin-top:.8rem}
+.areas-note{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.25rem;margin:1.1rem 0 0;text-align:center}
+@media (max-width:760px){.calm-text:not(.calm-text-2){font-size:1.35rem}.calm-text.calm-text-2{font-size:1.2rem}.areas-note{font-size:1.1rem}}
+@media (min-width:900px){
+  .bottom-pair{gap:0 !important}
+  .bottom-pair .about-sec{padding-right:3.2rem}
+  .bottom-pair .contact-sec .wrap{padding-left:0;padding-right:0;margin:0;width:auto;max-width:none}
+  .bottom-pair .talk:not(.contact-card){padding-left:3.2rem}
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw1{left:-31px}
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw2{left:-5px}
+}
+@media (min-width:900px){
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw1{left:-58px}
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw2{left:-32px}
+  .bottom-pair .talk:not(.contact-card){padding-left:4rem}
+  .bottom-pair .about-sec{padding-right:4rem}
+}
+@media (min-width:900px){
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw1{left:-96px}
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw2{left:-70px}
+}
+.bottom-pair,.bottom-pair .contact-sec,.bottom-pair .contact-sec .wrap,.bottom-pair .talk{overflow:visible !important}
+.calm-sprig{width:38px;height:50px;opacity:1;margin:.6rem auto -.1rem}
+@media (min-width:900px){
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw1{left:-72px}
+  .bottom-pair .talk:not(.contact-card) .talk-twig.tw2{left:-46px}
+}
