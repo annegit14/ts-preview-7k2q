@@ -922,3 +922,50 @@ footer p:not(.fine){font-size:14px !important;opacity:.85}
   .bottom-pair .talk:not(.contact-card) .talk-twig.tw1{left:-72px}
   .bottom-pair .talk:not(.contact-card) .talk-twig.tw2{left:-46px}
 }
+
+/* v1426 phone: small top menu, two links left, two right */
+@media (max-width:760px){
+  .topbar{padding:.5rem 0 0 !important}
+  .topbar-in{padding-left:.9rem !important;padding-right:.9rem !important}
+  .topbar nav{width:100%}
+  .topbar nav ul{display:flex !important;flex-wrap:nowrap !important;justify-content:flex-start !important;gap:0 !important;width:100%}
+  .topbar nav li:nth-child(2){margin-right:auto}
+  .topbar nav a{font-size:15px !important;padding:.25rem .45rem !important;min-height:0 !important;line-height:1.4 !important;opacity:.9}
+}
+@media (max-width:760px){
+  .topbar nav ul{justify-content:space-between !important}
+  .topbar nav li:nth-child(2){margin-right:0 !important}
+}
+
+/* v1428 phone: scaled down overall, small tiles */
+@media (max-width:760px){
+  .emblem{transform:scale(.68);transform-origin:center top;margin-bottom:-2.2rem}
+  h1{font-size:2.15rem !important;line-height:1.15 !important}
+  .hero .lead,.lead{font-size:1.3rem !important}
+  .btn{font-size:1.05rem !important;padding:.7rem 1.6rem !important;min-height:0 !important}
+  .calm-text:not(.calm-text-2){font-size:1.2rem !important}
+  .calm-text.calm-text-2{font-size:1.05rem !important}
+  .calm-in{padding-top:1rem}
+  .tiles{gap:.7rem !important}
+  .tile{position:relative;display:grid !important;grid-template-columns:44px 1fr;column-gap:.85rem;align-items:center;padding:.8rem 2.6rem .8rem .9rem !important;border-radius:26px 10px 26px 10px !important}
+  .tile .hd{display:contents}
+  .tile .ico{width:44px !important;height:44px !important;grid-row:1 / span 2;align-self:center}
+  .tile .ico svg{width:28px !important;height:28px !important}
+  .tile .num{position:absolute;top:.5rem;right:.7rem;width:26px !important;height:26px !important;font-size:.9rem !important}
+  .tile h3{font-size:1.2rem !important;margin:0 !important;grid-column:2}
+  .tile p{font-size:.95rem !important;line-height:1.35 !important;margin:.1rem 0 0 !important;grid-column:2}
+  .premier{font-size:1.15rem !important;line-height:1.35}
+  .areas-title{font-size:1.4rem !important;margin-bottom:.9rem !important}
+  .area-list li{font-size:16px !important;padding:.5rem 1.1rem !important}
+  .areas-note{font-size:.95rem !important}
+  .talk:not(.contact-card) h2{font-size:1.35rem !important}
+  .talk:not(.contact-card) .contact .lbl{font-size:1rem !important}
+  .talk:not(.contact-card) .contact a{font-size:1.2rem !important}
+  .about .photo{width:96px !important;height:118px !important;margin-inline:auto}
+  .about .photo img{width:142px !important;height:142px !important;max-width:none !important;margin:-24px 0 0 -12px !important}
+  .about-text h2{font-size:1.4rem !important}
+  .about-text .coord,.about-text .about-line{font-size:1.05rem !important}
+}
+@media (max-width:760px){.calm-text-2 .l4a{display:block}}
+@media (min-width:761px){.calm-text-2 .l4a:nth-child(2)::after{content:"\A";white-space:pre}.calm-text-2 .l4a:nth-child(4)::before{content:""}}
+@media (max-width:760px){.calm-text .br1{display:block}}
