@@ -971,3 +971,35 @@ footer p:not(.fine){font-size:14px !important;opacity:.85}
 @media (max-width:760px){.calm-text .br1{display:block}}
 /* v1444: no colored bar above service tiles */
 .tile::before,.tile.l2::before,.tile.l3::before,.tile.l4::before{display:none !important}
+
+
+/* Page motto — matches hero h1 wording on every page/form */
+.page-motto{
+  font-family:var(--serif);
+  font-weight:500;
+  font-size:clamp(1.35rem,3.2vw,1.85rem);
+  line-height:1.25;
+  letter-spacing:-.005em;
+  color:var(--champ-h1,#DDB580);
+  margin:0 0 .85rem;
+  text-align:center;
+}
+.page-motto em{
+  font-style:italic;
+  color:inherit;
+}
+.contact-card .page-motto,
+.talk .page-motto,
+.contact-sec .page-motto{
+  color:var(--champ-h1,#DDB580);
+}
+.contact-card .page-motto em,
+.talk .page-motto em,
+.contact-sec .page-motto em{
+  color:var(--champ-h1,#DDB580);
+}
+.contact-card .page-motto,
+.talk .page-motto{
+  margin:0 0 .6rem;
+}
+.hero .page-motto{display:none} /* hero already uses h1 */
