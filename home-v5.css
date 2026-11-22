@@ -154,3 +154,4 @@ body .page .pkg-hint,.pkg-hint{display:block!important;visibility:visible!import
 .h5-tiers{align-items:stretch}
 .h5-tiers li{height:100%;display:flex;flex-direction:column}
 .h5-tier-link{flex:1 1 auto;height:100%}
+@media (max-width:600px){.h5-founder{font-size:clamp(.78rem,3.9vw,1rem)!important;white-space:nowrap}}
