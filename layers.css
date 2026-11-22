@@ -128,7 +128,7 @@ h1 em,.about-text h2,.contact a,.contact .lbl,.contact li > span,.talk .page-mot
 .l-tier-link:focus-visible{box-shadow:inset 0 0 0 2px #D4A447}
 .l-tier-link:active{background:rgba(212,164,71,.14)}
 
-.pkg-hint{font-style:italic;font-size:1.2rem;line-height:1.4;color:#E8C47A;text-align:center;margin:0 0 1.3rem;font-weight:400}
+body .page .pkg-hint,.pkg-hint{display:block!important;visibility:visible!important;font-style:italic!important;font-size:1.2rem;line-height:1.4;color:#E8C47A!important;text-align:center;margin:0 0 1.3rem;font-weight:400}
 
 .pkg-go{transition:transform 120ms ease,background-color 120ms ease}
 @media (hover:hover){
