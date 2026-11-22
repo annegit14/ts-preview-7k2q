@@ -34,10 +34,21 @@
   font-size:1.35rem;
   font-weight:500;
   line-height:1.25;
-  margin:0 0 1rem;
+  margin:0 0 .2rem;
 }
 @media (max-width:760px){
-  .talk.contact-card h2{font-size:1.2rem;margin:0 0 .85rem}
+  .talk.contact-card h2{font-size:1.2rem;margin:0 0 .15rem}
+}
+.talk.contact-card .contact-intro{
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:400;
+  font-size:1.08rem;
+  line-height:1.45;
+  margin:0 0 1rem;
+}
+@media (max-width:560px){
+  .talk.contact-card .contact-intro{font-size:min(1.08rem,3.7vw)}
 }
 .talk.contact-card .contact-sub{
   font-size:clamp(1.55rem,2.4vw,1.95rem);
@@ -164,6 +175,7 @@
           <p class="page-motto">Medical travel abroad, tailored just for you</p>
           <svg class="calm-leaves lotus-div lotus-top" viewBox="0 0 220 40" aria-hidden="true"><path d="M8 26 H84 M136 26 H212" stroke="#F0DCA6" stroke-width=".9" opacity=".8"/><circle cx="8" cy="26" r="2" fill="#F0DCA6"/><circle cx="212" cy="26" r="2" fill="#F0DCA6"/><use href="#lotus" x="80" y="0" width="60" height="38"/></svg>
           <h2>Get in touch</h2>
+          <p class="contact-intro"><span style="white-space:nowrap">From your first question until you arrive back home,</span><br><span style="white-space:nowrap">we focus on the details so you can focus on healing.</span></p>
           <div class="contact-actions">
             <a class="btn" href="sms:+19195788098">Text us</a>
             <a class="btn" href="mailto:thethaistandard@gmail.com">Email us</a>

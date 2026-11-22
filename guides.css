@@ -104,6 +104,9 @@ a:not(.btn),.topbar nav a,.g-crumb a,.g-foot-links a,footer .g-email a,.page-mot
 .g-close .g-lotus{margin:0 auto 1rem}
 .g-close .g-close-h{font-family:var(--serif);font-size:clamp(2.1rem,4.6vw,3rem);line-height:1.15;font-weight:600;color:var(--champ-hi);margin:0 0 .5rem}
 .g-close .g-close-p{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.4vw,1.6rem);line-height:1.45;color:var(--champ);margin:0 0 1.3rem}
+@media (max-width:760px){
+  .g-close .g-close-p span{white-space:normal!important}
+}
 
 
 /* 2026-11-22 draft: lightened, distinct tile colors so cards are easier to read
