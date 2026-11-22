@@ -30,7 +30,7 @@ details summary:focus-visible{outline:2px solid #D4A447;outline-offset:3px;borde
 .l-tiers{max-width:60rem;margin:3rem auto 0;text-align:center}
 .l-tiers-h{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2rem);color:#D4A447;font-weight:600;margin:0 0 1.2rem}
 .l-tier-strip{list-style:none;margin:0 0 1.4rem;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.l-tier{display:flex;flex-direction:column;gap:.4rem;padding:1.3rem 1.2rem;border:1px solid rgba(212,164,71,.5);border-radius:20px;background:rgba(36,19,58,.6)}
+.l-tier{display:flex;flex-direction:column;gap:.4rem;padding:1.3rem 1.2rem;border:1px solid rgba(212,164,71,.5);border-radius:20px;background:rgba(39,19,58,.6)}
 .l-tier-n{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:#D4A447}
 .l-tier-l{font-size:1.1rem;line-height:1.5;color:#E8C47A}
 .l-tiers details.l-more{border-bottom:1px solid rgba(212,164,71,.4);text-align:left}
@@ -120,3 +120,43 @@ h1 em,.about-text h2,.contact a,.contact .lbl,.contact li > span,.talk .page-mot
 .l-decide,.l-disc-line,.l-close-soft p,details.l-more > summary{color:#E8C47A !important}
 .g-hub h1,.l-tiers-h,.l-tier-n,.l-tier-full h3{color:#D4A447 !important}
 .l-disc-line{text-align:center;max-width:46rem;margin:1.8rem auto 0;font-family:var(--sans);font-size:16px;line-height:1.5;color:#E8C47A !important}
+
+/* v10 package cards + plus-only compare toggle */
+.l-tier{padding:0;gap:0}
+.l-tier-link{display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1.3rem 1.2rem 1.1rem;height:100%;box-sizing:border-box;text-decoration:none;color:inherit;cursor:pointer;border-radius:20px;min-height:44px}
+.l-tier-link:hover,.l-tier-link:focus-visible{background:rgba(212,164,71,.08);outline:none}
+.l-tier-link:focus-visible{box-shadow:inset 0 0 0 2px #D4A447}
+.l-tier-link:active{background:rgba(212,164,71,.14)}
+
+.pkg-hint{font-style:italic;font-size:1.2rem;line-height:1.4;color:#E8C47A;text-align:center;margin:0 0 1.3rem;font-weight:400}
+
+.pkg-go{transition:transform 120ms ease,background-color 120ms ease}
+@media (hover:hover){
+  .h5-tier-link:hover .pkg-go,.l-tier-link:hover .pkg-go{background:#53356F;transform:scale(1.08)}
+}
+.h5-tier-link:active .pkg-go,.l-tier-link:active .pkg-go,
+.h5-tier-link:focus-visible .pkg-go,.l-tier-link:focus-visible .pkg-go{background:#53356F;transform:scale(1.08)}
+@media (prefers-reduced-motion:reduce){
+  .pkg-go{transition:none}
+  .h5-tier-link:hover .pkg-go,.l-tier-link:hover .pkg-go,
+  .h5-tier-link:active .pkg-go,.l-tier-link:active .pkg-go,
+  .h5-tier-link:focus-visible .pkg-go,.l-tier-link:focus-visible .pkg-go{transform:none}
+}
+
+/* v12 larger leaf pills + hidden compare summary */
+
+details.l-pkg-compare{border:0}
+details.l-pkg-compare > summary,.pkg-sum-hidden{display:none!important}
+details.l-pkg-compare[open]{border-top:1px solid rgba(212,164,71,.45);margin-top:.6rem;padding-top:.2rem}
+
+/* v14: one branch with 1/2/3 leaves, darker visible pill */
+.pkg-go{display:inline-flex;align-items:center;justify-content:center;height:64px;width:68px;margin-top:auto;padding:8px;border-radius:999px;background:#6F4695;border:2px solid #D4A447;box-sizing:border-box;pointer-events:none;flex:0 0 68px;transition:transform 120ms ease,background-color 120ms ease,border-color 120ms ease}
+.pkg-go-1,.pkg-go-2,.pkg-go-3{min-width:0;padding:8px}
+.pkg-go svg{width:44px;height:44px;display:block}
+
+
+/* v15 equal-height package cards; leaf button pinned to the bottom */
+.l-tier-strip{align-items:stretch}
+.l-tier{height:100%;display:flex;flex-direction:column}
+.l-tier-link{flex:1 1 auto;height:100%}
+.l-tier-link .pkg-go{margin-top:auto}

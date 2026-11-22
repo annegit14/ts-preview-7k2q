@@ -8,7 +8,7 @@
 .g-hero h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.15;color:var(--champ-h1,#EDC26A);margin:0 0 .6rem}
 .g-hero .g-sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.4vw,1.6rem);line-height:1.45;margin:0 auto;max-width:44rem;color:var(--champ)}
 .g-lotus{width:180px;height:32px;margin:1.2rem auto}
-.g-art{background:rgba(36,19,58,.72);border:1px solid rgba(237,194,106,.28);border-radius:28px;
+.g-art{background:rgba(39,19,58,.72);border:1px solid rgba(237,194,106,.28);border-radius:28px;
   padding:clamp(1.4rem,4vw,3rem);font-size:1.2rem;line-height:1.7;color:var(--champ)}
 @media (min-width:1000px){.g-art{font-size:1.3rem}}
 .g-art h2{font-size:clamp(1.45rem,2.8vw,1.9rem);margin:2.2rem 0 .7rem;color:var(--champ-hi)}
@@ -26,7 +26,7 @@
 .g-cta{text-align:center;margin:2.4rem 0 0}
 .g-cta p{font-family:var(--serif);font-style:italic;font-size:1.3rem;margin:0 0 1rem}
 .g-cards{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.3rem}
-.g-card{display:flex;flex-direction:column;height:100%;text-decoration:none;background:rgba(36,19,58,.72);
+.g-card{display:flex;flex-direction:column;height:100%;text-decoration:none;background:rgba(39,19,58,.72);
   border:1px solid rgba(237,194,106,.28);border-radius:24px;padding:1.5rem 1.6rem;transition:border-color .2s,transform .2s}
 .g-card:hover,.g-card:focus-visible{border-color:rgba(237,194,106,.75);transform:translateY(-2px)}
 .g-card .g-ico{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--champ-line);margin-bottom:.9rem}
@@ -77,7 +77,7 @@ body,p,li,em,footer,footer p,footer p.fine,.g-art,.g-art p,.g-art li,.g-intro,.g
 h1,h1 em,h2,h3,strong,.g-art strong,.g-art h2,.g-card h2,.g-tier h3,.g-hook,.g-card .g-hook,.g-note em,.g-more,.g-card .g-more,
 a:not(.btn),.topbar nav a,.g-crumb a,.g-foot-links a,footer .g-email a,.page-motto,.page-motto em{color:var(--champ-hi)}
 .g-hero h1{color:var(--champ-h1)}
-.btn{background:#D4A447;color:#24133A}
+.btn{background:#D4A447;color:#27133A}
 .btn:hover{background:#E0B259}
 .g-art,.g-card{border-color:rgba(212,164,71,.38)}
 .g-card:hover,.g-card:focus-visible{border-color:rgba(212,164,71,.85)}
@@ -86,7 +86,7 @@ a:not(.btn),.topbar nav a,.g-crumb a,.g-foot-links a,footer .g-email a,.page-mot
 
 /* Hub: bigger main heading and the "any procedure" note near the top */
 .g-hub h1{font-size:clamp(2.6rem,6.2vw,4.4rem);line-height:1.08}
-.g-any{max-width:46rem;margin:.4rem auto 1.4rem;text-align:center;padding:1.1rem 1.4rem;border:1px solid rgba(212,164,71,.55);border-radius:20px;background:rgba(36,19,58,.6)}
+.g-any{max-width:46rem;margin:.4rem auto 1.4rem;text-align:center;padding:1.1rem 1.4rem;border:1px solid rgba(212,164,71,.55);border-radius:20px;background:rgba(39,19,58,.6)}
 .g-any p{margin:0;font-size:1.2rem;line-height:1.55}
 .g-any .g-any-h{font-family:var(--serif);font-size:clamp(1.45rem,2.8vw,1.9rem);font-weight:600;color:var(--champ-hi);margin:0 0 .3rem}
 
@@ -109,11 +109,11 @@ a:not(.btn),.topbar nav a,.g-crumb a,.g-foot-links a,footer .g-email a,.page-mot
 /* 2026-11-22 draft: lightened, distinct tile colors so cards are easier to read
    against the plum page. Gold body #E8C47A and heading #D4A447 stay at WCAG AA
    (body 5.5:1 or higher, headings 4.2:1 or higher). Purple family still matches
-   the site tokens --plum #3A2152 and --plum-lite #4A2C68. */
-.g-card{background:#4A2C68;border-color:rgba(212,164,71,.5);box-shadow:0 8px 22px rgba(10,4,20,.22)}
+   the site tokens --plum #3A2152 and --plum-lite #4B2C68. */
+.g-card{background:#4B2C68;border-color:rgba(212,164,71,.5);box-shadow:0 8px 22px rgba(12,5,19,.22)}
 .g-card:hover,.g-card:focus-visible{border-color:rgba(232,196,122,.95);transform:translateY(-2px)}
 .g-card .g-ico{background:rgba(251,241,236,.08);border-color:rgba(212,164,71,.55)}
-.g-card-ortho{background:#4A2C68}
+.g-card-ortho{background:#4B2C68}
 .g-card-cardiac{background:#6A2C3C}
 .g-card-fertility{background:#244636}
 .g-card-dental{background:#1A3A68}
@@ -124,10 +124,10 @@ a:not(.btn),.topbar nav a,.g-crumb a,.g-foot-links a,footer .g-email a,.page-mot
 .g-card-eye{background:#5A2040}
 .g-card-older{background:#2A4550}
 .g-card-children{background:#5A2E44}
-.g-card-planning{background:#4E3470}
+.g-card-planning{background:#533470}
 
 
-/* Planning tile: same size/dim family as the other 8; muted plum #4E3470 already set above */
+/* Planning tile: same size/dim family as the other 8; muted plum #533470 already set above */
 .g-card .g-card-eyebrow{
   font-size:.78rem;
   letter-spacing:.14em;
