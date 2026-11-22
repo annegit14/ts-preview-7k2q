@@ -59,6 +59,11 @@ html, body {
   margin-bottom: 0.5rem;
 }
 .top a { color: var(--plum); text-decoration: none; }
+.top a[aria-current="page"]{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:400px){
+  .top{gap:.65rem;font-size:.85rem;flex-wrap:nowrap;justify-content:space-between}
+}
+
 header { text-align: center; }
 .brand, h1, .check-card h2 { font-family: var(--serif); }
 .lotus-div {
@@ -437,6 +442,18 @@ a.cta-btn .cta-label {
 }
 .g-social.close-social{display:flex;justify-content:center;align-items:center;gap:.7rem;margin:.15rem 0 .55rem;padding:0}
 .g-social.close-social a.g-social-link{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;color:#8A6420;text-decoration:none;border-radius:6px}
+.close-legal-line, .g-foot-legal.close-legal-line{
+  font-family:inherit;
+  font-size:12px !important;
+  line-height:1.45 !important;
+  color:#8A6420 !important;
+  text-align:center;
+  max-width:36rem;
+  margin:.25rem auto 0 !important;
+  padding:0 .75rem;
+  text-wrap:pretty;
+}
+
 .g-social.close-social a.g-social-link svg{width:22px;height:22px;display:block}
 .g-social.close-social a.g-social-link:hover,
 .g-social.close-social a.g-social-link:focus-visible{color:#A8792A}
@@ -479,6 +496,7 @@ header{position:relative}
 <nav class="top no-print" aria-label="Main">
   <a href="../index.html">Home</a>
   <a href="../specialties.html">Specialties</a>
+  <a href="medical-travel-checklist.html" aria-current="page">Planning</a>
   <a href="../contact.html">Contact</a>
 </nav>
 <header>
@@ -568,8 +586,8 @@ header{position:relative}
 
 <section class="close" aria-label="Get help">
   <div class="help-unit">
-    <p class="help-lead" style="font-family:Georgia,serif!important;font-style:italic!important;color:#8A6420!important;font-weight:400!important;font-size:1.25rem!important;margin-bottom:.25rem!important">Is this overwhelming? Let us help.</p>
-    <p class="help-note" style="font-family:Georgia,serif!important;font-style:italic!important;color:#B8955A!important;font-weight:400!important;font-size:1.08rem!important"><span style="white-space:nowrap">From your first question until you arrive back home,</span><br><span style="white-space:nowrap">we focus on the details so you can focus on healing.</span></p>
+    <p class="help-lead" style="font-family:Georgia,serif!important;font-style:italic!important;color:#8A6420!important;font-weight:400!important;font-size:1.25rem!important;margin-bottom:.25rem!important">Is this overwhelming?</p>
+    <p class="help-note" style="font-family:Georgia,serif!important;font-style:italic!important;color:#B8955A!important;font-weight:400!important;font-size:1.08rem!important">We can help coordinate every piece of your health journey. <a href="../contact.html" style="color:#8A6420;text-decoration:none">Message us</a>.</p>
   </div>
   <svg class="end-lotus" viewBox="0 0 220 40" aria-hidden="true" style="width:170px;height:31px;margin:.3rem auto;display:block"><path d="M8 26 H84 M136 26 H212" stroke="#D4A447" stroke-width=".9" opacity=".8"/><use href="#lotus" x="80" y="0" width="60" height="38"/></svg>
   <p style="margin:.55rem 0 .1rem;font-size:.92rem;text-align:center"><a href="https://thethaistandard.com" style="color:#8A6420;text-decoration:none">thethaistandard.com</a></p>
@@ -579,7 +597,8 @@ header{position:relative}
 <a class="g-social-link" href="https://www.instagram.com/thethaistandard/" target="_blank" rel="noopener" aria-label="The Thai Standard on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.25"/><circle cx="12" cy="12" r="4.15"/><circle cx="16.85" cy="7.15" r="1.05" fill="currentColor" stroke="none"/></svg></a>
 </p>
   <svg class="end-lotus" viewBox="0 0 220 40" aria-hidden="true" style="width:170px;height:31px;margin:0 auto;display:block"><path d="M8 26 H84 M136 26 H212" stroke="#D4A447" stroke-width=".9" opacity=".8"/><use href="#lotus" x="80" y="0" width="60" height="38"/></svg>
-  <p class="end-disc" style="margin:.6rem 0 0;font-size:.78rem;color:#A8956F;text-align:center">The Thai Standard LLC &middot; We coordinate logistics. We do not provide medical care or advice.</p>
+  <p class="end-disc" style="margin:.6rem 0 0;font-size:.78rem;color:#A8956F;text-align:center">The Thai Standard LLC</p>
+  <p class="g-foot-legal close-legal-line">We coordinate logistics only. We do not provide medical care or advice, nor do we travel with you.</p>
 </section>
 </div>
 </body>

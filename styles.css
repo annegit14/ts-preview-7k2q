@@ -1096,3 +1096,41 @@ footer.site-foot a.g-social-link:focus-visible{
   outline:2px solid #F6D68E;
   outline-offset:2px;
 }
+
+footer.site-foot .g-foot-legal{
+  font-family:inherit;
+  font-size:max(12px,.8rem) !important;
+  line-height:1.45;
+  color:#B88E3E !important;
+  opacity:1 !important;
+  max-width:36rem;
+  margin:.35rem auto 0 !important;
+  padding:0 .75rem;
+  text-wrap:pretty;
+  text-align:center;
+}
+
+/* 5-item top menu: keep an even single line on phones */
+@media (max-width:760px){
+  .topbar-in{padding-left:.4rem !important;padding-right:.4rem !important}
+  .topbar nav ul{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    gap:0 !important;
+    width:100%;
+  }
+  .topbar nav li{margin:0 !important;flex:0 1 auto}
+  .topbar nav a{
+    font-size:13px !important;
+    padding:.22rem .16rem !important;
+    letter-spacing:0 !important;
+    white-space:nowrap !important;
+    min-height:0 !important;
+    line-height:1.35 !important;
+  }
+}
+@media (max-width:370px){
+  .topbar nav ul{flex-wrap:nowrap !important}
+}

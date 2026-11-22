@@ -170,3 +170,33 @@ body .page .h5-card .h5-c + .h5-c{margin-top:.05rem!important}
  body .page .h5-card .h5-yrs{font-size:1.5rem!important;margin-bottom:1.6rem!important;white-space:normal!important}
  body .page .h5-card .h5-c{font-size:1rem!important}
 }
+
+/* pricing note directly under the package tiers */
+body .page .pkg-hint.pkg-price-line,
+.pkg-hint.pkg-price-line{
+  display:flex !important;
+  justify-content:center;
+  align-items:center;
+  gap:.45rem;
+  margin:1.35rem auto 0 !important;
+  text-align:center;
+  max-width:none;
+}
+.pkg-price-line .pkg-price-leaf{
+  flex:0 0 auto;
+  width:.85em;
+  height:1.15em;
+  display:block;
+}
+.pkg-price-line .pkg-price-leaf-flip{transform:scaleX(-1)}
+.pkg-price-line span{
+  flex:0 1 auto;
+  min-width:0;
+}
+@media (min-width:761px){
+  .pkg-price-line span{white-space:nowrap}
+}
+@media (max-width:760px){
+  .pkg-hint.pkg-price-line{padding:0 .4rem;gap:.35rem}
+  .pkg-price-line span{white-space:normal}
+}
