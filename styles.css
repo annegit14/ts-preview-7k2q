@@ -1063,3 +1063,36 @@ footer.site-foot .g-foot-disc{
   max-width:40rem;
   margin:.2rem auto 0 !important;
 }
+
+footer.site-foot .g-social{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:.7rem;
+  margin:.55rem 0 .15rem !important;
+  padding:0;
+}
+footer.site-foot a.g-social-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:36px;
+  height:36px;
+  color:#D4A447 !important;
+  text-decoration:none !important;
+  opacity:1 !important;
+  border-radius:6px;
+}
+footer.site-foot a.g-social-link svg{
+  width:22px;
+  height:22px;
+  display:block;
+}
+footer.site-foot a.g-social-link:hover,
+footer.site-foot a.g-social-link:focus-visible{
+  color:#F6D68E !important;
+}
+footer.site-foot a.g-social-link:focus-visible{
+  outline:2px solid #F6D68E;
+  outline-offset:2px;
+}

@@ -435,6 +435,20 @@ a.cta-btn .cta-label {
   .site-foot .g-llc{font-size:1rem;color:#E8C47A;margin:.45rem 0 .2rem}
   .site-foot .g-foot-disc{font-size:.95rem;color:#E8C47A;max-width:40rem;margin:.2rem auto 0}
 }
+.g-social.close-social{display:flex;justify-content:center;align-items:center;gap:.7rem;margin:.15rem 0 .55rem;padding:0}
+.g-social.close-social a.g-social-link{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;color:#8A6420;text-decoration:none;border-radius:6px}
+.g-social.close-social a.g-social-link svg{width:22px;height:22px;display:block}
+.g-social.close-social a.g-social-link:hover,
+.g-social.close-social a.g-social-link:focus-visible{color:#A8792A}
+.g-social.close-social a.g-social-link:focus-visible{outline:2px solid #A8792A;outline-offset:2px}
+@media print{.g-social.close-social{display:none}}
+/* in case a shared site-foot is added later */
+@media screen {
+  .site-foot .g-social{display:flex;justify-content:center;align-items:center;gap:.7rem;margin:.55rem 0 .15rem;padding:0}
+  .site-foot a.g-social-link{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;color:#D4A447;text-decoration:none;border-radius:6px}
+  .site-foot a.g-social-link svg{width:22px;height:22px;display:block}
+}
+
 
 header{position:relative}
 .side-tools{position:absolute;top:.2rem;right:0;display:flex;flex-direction:column;gap:.55rem;align-items:center}
@@ -560,6 +574,10 @@ header{position:relative}
   <svg class="end-lotus" viewBox="0 0 220 40" aria-hidden="true" style="width:170px;height:31px;margin:.3rem auto;display:block"><path d="M8 26 H84 M136 26 H212" stroke="#D4A447" stroke-width=".9" opacity=".8"/><use href="#lotus" x="80" y="0" width="60" height="38"/></svg>
   <p style="margin:.55rem 0 .1rem;font-size:.92rem;text-align:center"><a href="https://thethaistandard.com" style="color:#8A6420;text-decoration:none">thethaistandard.com</a></p>
   <p style="margin:0 0 .55rem;font-size:.92rem;text-align:center"><a href="mailto:thethaistandard@gmail.com" style="color:#8A6420;text-decoration:none">thethaistandard@gmail.com</a></p>
+  <p class="g-social close-social">
+<a class="g-social-link" href="https://www.facebook.com/profile.php?id=61596089040519" target="_blank" rel="noopener" aria-label="The Thai Standard on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="4.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M13.35 19.25v-6.7h1.95l.3-2.1h-2.25V9.15c0-.6.16-1.02.98-1.02h1.22V6.22A14.6 14.6 0 0 0 13.18 6c-1.72 0-2.9 1.05-2.9 2.98v1.47H8.7v2.1h1.58v6.7h3.07z" fill="currentColor" stroke="none"/></svg></a>
+<a class="g-social-link" href="https://www.instagram.com/thethaistandard/" target="_blank" rel="noopener" aria-label="The Thai Standard on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.25"/><circle cx="12" cy="12" r="4.15"/><circle cx="16.85" cy="7.15" r="1.05" fill="currentColor" stroke="none"/></svg></a>
+</p>
   <svg class="end-lotus" viewBox="0 0 220 40" aria-hidden="true" style="width:170px;height:31px;margin:0 auto;display:block"><path d="M8 26 H84 M136 26 H212" stroke="#D4A447" stroke-width=".9" opacity=".8"/><use href="#lotus" x="80" y="0" width="60" height="38"/></svg>
   <p class="end-disc" style="margin:.6rem 0 0;font-size:.78rem;color:#A8956F;text-align:center">The Thai Standard LLC &middot; We coordinate logistics. We do not provide medical care or advice.</p>
 </section>
