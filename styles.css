@@ -464,15 +464,17 @@ h1 em{color:inherit}
   .lilac-left{width:150px;height:45px;left:-20px;top:4px}
   .calm-branch{width:140px;height:42px}
 }
-/* Version B — warmer gold / rose-gold text */
-:root{--champ:#EBCFA4;--champ-hi:#EDCB98;--champ-h1:#DDB580}
+/* Version B — two shades of one champagne gold (hue of brand #EDC26A).
+   Dark gold (--champ-hi / --champ-h1, #EDC26A) for bold/larger headers and accents.
+   Light gold (--champ, #F3D79E) is a lighter tint of the same hue for body text. */
+:root{--champ:#F3D79E;--champ-hi:#EDC26A;--champ-h1:#EDC26A}
 body{color:var(--champ)}
 h2,h3,.lead,.calm-text,.calm-text em,.tile h3,.about-text h2,.topbar nav a,.contact a,.contact li > span:not(.lbl),.num{color:var(--champ-hi)}
 h1,h1 em{color:var(--champ-h1)}
 .eyebrow,.contact .lbl,.intro,.section-lead,.tile p,.about-text p,footer{color:var(--champ)}
 .warm{color:var(--champ-hi)}
-.btn{background:#E6C796}
-.btn:hover{background:#EDCB98}
+.btn{background:#EDC26A}
+.btn:hover{background:#F1CE88}
 /* round 4 fixes */
 .hero-left{top:230px;left:-20px;width:220px;height:165px}
 .calm-branch{width:200px;height:60px}
@@ -980,7 +982,7 @@ footer p:not(.fine){font-size:14px !important;opacity:.85}
   font-size:clamp(1.35rem,3.2vw,1.85rem);
   line-height:1.25;
   letter-spacing:-.005em;
-  color:var(--champ-h1,#DDB580);
+  color:var(--champ-h1,#EDC26A);
   margin:0 0 .85rem;
   text-align:center;
 }
@@ -991,15 +993,73 @@ footer p:not(.fine){font-size:14px !important;opacity:.85}
 .contact-card .page-motto,
 .talk .page-motto,
 .contact-sec .page-motto{
-  color:var(--champ-h1,#DDB580);
+  color:var(--champ-h1,#EDC26A);
 }
 .contact-card .page-motto em,
 .talk .page-motto em,
 .contact-sec .page-motto em{
-  color:var(--champ-h1,#DDB580);
+  color:var(--champ-h1,#EDC26A);
 }
 .contact-card .page-motto,
 .talk .page-motto{
   margin:0 0 .6rem;
 }
 .hero .page-motto{display:none} /* hero already uses h1 */
+
+/* Homepage closing block (draft 2026-11-20 v3). Scoped to .home-close only; nothing else on the homepage changes. */
+.home-close{text-align:center;padding:2.5rem 0 1rem}
+.home-close .lotus-div{display:block;width:180px;height:32px;margin:0 auto 1rem}
+.home-close h2.home-close-h{font-family:var(--serif);font-size:clamp(2.3rem,5vw,3.3rem);line-height:1.15;font-weight:600;color:#D4A447 !important;margin:0 0 .5rem}
+.home-close p.home-close-p{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,2.6vw,1.75rem);line-height:1.45;color:#E8C47A !important;margin:0 auto 1.4rem;max-width:34ch}
+.home-close .btn{display:inline-block}
+
+
+/* 2026-11-22: identical site footer on every live page */
+footer.site-foot{
+  text-align:center;
+  padding:1.8rem 0 2.4rem !important;
+  background:var(--plum-3,#24133A);
+  color:#E8C47A;
+  border-top:1px solid rgba(212,164,71,.45);
+  overflow:visible;
+}
+footer.site-foot .foot-leaves{width:180px;height:32px;margin:0 auto .8rem}
+footer.site-foot .page-motto{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:clamp(1.15rem,2.2vw,1.45rem) !important;
+  line-height:1.4;
+  text-transform:none !important;
+  color:#D4A447 !important;
+  opacity:1 !important;
+  margin:0 0 .35rem !important;
+  max-width:none !important;
+}
+footer.site-foot .page-motto em{color:#D4A447 !important;font-style:italic;text-transform:none !important;opacity:1 !important}
+footer.site-foot .g-email,
+footer.site-foot .g-email a{
+  font-size:1rem !important;
+  color:#D4A447 !important;
+  opacity:1 !important;
+  margin:.15rem 0 !important;
+}
+footer.site-foot .g-foot-links,
+footer.site-foot .g-foot-links a{
+  font-size:1rem !important;
+  color:#D4A447 !important;
+  opacity:1 !important;
+  margin:.4rem 0 .2rem !important;
+}
+footer.site-foot .g-llc{
+  font-size:1rem !important;
+  color:#E8C47A !important;
+  opacity:1 !important;
+  margin:.5rem 0 .25rem !important;
+}
+footer.site-foot .g-foot-disc{
+  font-size:.95rem !important;
+  color:#E8C47A !important;
+  opacity:1 !important;
+  max-width:40rem;
+  margin:.2rem auto 0 !important;
+}
