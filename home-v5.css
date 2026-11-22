@@ -155,3 +155,18 @@ body .page .pkg-hint,.pkg-hint{display:block!important;visibility:visible!import
 .h5-tiers li{height:100%;display:flex;flex-direction:column}
 .h5-tier-link{flex:1 1 auto;height:100%}
 @media (max-width:600px){.h5-founder{font-size:clamp(.78rem,3.9vw,1rem)!important;white-space:nowrap}}
+/* bio restructure */
+body .page .h5-card{max-width:50rem!important}
+body .page .h5-card h2,body .page .h5-card .h5-founder{font-family:var(--serif)!important;color:#EDC26A!important;font-weight:500!important}
+body .page .h5-card h2{font-size:1.45rem!important;margin:0 0 .15rem!important;line-height:1.2}
+body .page .h5-card .h5-founder{font-size:1.08rem!important;margin:0 0 1.1rem!important;line-height:1.25}
+body .page .h5-card .h5-yrs{font-size:1.6rem!important;line-height:1.25;color:#F3D79E!important;opacity:1;margin:0 0 1.9rem!important;white-space:nowrap!important}
+body .page .h5-card .h5-yrs em{color:#F3D79E!important}
+body .page .h5-card .h5-c{font-size:1.05rem!important;margin:0!important}
+body .page .h5-card .h5-c + .h5-c{margin-top:.05rem!important}
+@media (max-width:600px){
+ body .page .h5-card h2{font-size:1.45rem!important}
+ body .page .h5-card .h5-founder{font-size:clamp(.82rem,4vw,1.05rem)!important;white-space:nowrap}
+ body .page .h5-card .h5-yrs{font-size:1.5rem!important;margin-bottom:1.6rem!important;white-space:normal!important}
+ body .page .h5-card .h5-c{font-size:1rem!important}
+}
