@@ -1134,3 +1134,11 @@ footer.site-foot .g-foot-legal{
 @media (max-width:370px){
   .topbar nav ul{flex-wrap:nowrap !important}
 }
+
+/* Keep "tailored just for you" together when the motto wraps after the comma */
+footer.site-foot .page-motto em,
+.page-motto .motto-end,
+.talk.contact-card .page-motto .motto-end,
+.contact-card .page-motto .motto-end{
+  white-space:nowrap;
+}
